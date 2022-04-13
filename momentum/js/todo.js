@@ -2,6 +2,13 @@ const toDoForm =document.querySelector("#todo-form");
 const toDOInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector("#todo-list");
 
+
+const toDos=[];
+
+function saveToDos(){
+    localStorage.setItem("todos",JSON.stringify(toDos));
+}
+
 function deleteToDo(event){
     const li =event.target.parentElement;
     li.remove()
@@ -25,7 +32,9 @@ function handleToDoSubmit(event){
     event.preventDefault();
     const newTodo = toDOInput.value;
     toDOInput.value="";
+    toDos.push(newTodo);//리스트에 넣기.
     paintToDo(newTodo);
+    saveToDos();
 }
 
 
