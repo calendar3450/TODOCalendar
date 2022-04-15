@@ -9,7 +9,7 @@ function onLoginSubmit(tomato){
     tomato.preventDefault();// 새로고침을 안함 addEventListener에서 submit을 통해 새로고침을 해야하지만 못하게 막음
     const username=loginInput.value;
     loginForm.classList.add(HIDDEN_CLASSNAME);
-    // greeting.innerText="Hello "+username;
+    greeting.innerText="Hello "+username;
     localStorage.setItem(USERNAME_KEY,username);
     paintGreetings();
 }
