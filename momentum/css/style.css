@@ -7,3 +7,34 @@
     height: auto;
     display: block;
 }
+body{
+    background-image: url('img/4.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+}
+.clockFontAndPosition{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color: darkblue;
+    position: absolute;
+    top: 20px;
+}
+
+.quoteStyle{
+    position: absolute;
+    width:396px;
+    bottom: 10%;
+    left: 38%;
+    text-align: center;
+}
+
+.clockDiv{
+        position: absolute;
+        left: 44.5%;
+        top:0.5%
+}
+.greetingPosition{
+    position: absolute;
+    top:44%;
+    left: 45%;
+}
