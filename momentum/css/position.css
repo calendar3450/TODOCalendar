@@ -30,6 +30,7 @@ body{
     position: absolute;
     top:44%;
     left: 45%;
+    border-right: 2px solid black;
 }
 .namePosition{
     position: absolute;
