@@ -1,7 +1,7 @@
 const content = `Hello ${username}`;
 const text = document.querySelector("#greed");
 
-var i = 0;
+let i = 0;
 
 function typing(){
     if (i < content.length) {

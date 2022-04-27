@@ -1,0 +1,10 @@
+
+.blink{
+      animation: blink 0.5s infinite;
+      font-size: 2.5rem;
+  }
+@keyframes blink {
+    to {
+      opacity: 0;
+    }
+  }

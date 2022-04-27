@@ -17,7 +17,7 @@ body{
     position: absolute;
     width:396px;
     bottom: 10%;
-    left: 38%;
+    left: 42%;
     text-align: center;
 }
 
@@ -40,4 +40,10 @@ body{
     position: absolute;
     top: 47%;
     left:47%;
+}
+.blinkPosition{
+    position:absolute;
+    top:44%;
+    left: 45.5%;
+
 }
