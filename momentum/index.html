@@ -1,18 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/position.css">
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/typing.css">
+    <link rel="stylesheet" href="css/formDesign.css">
+    <link rel="stylesheet" href="css/button.css">
     <title>Momentum</title>
 </head>
-<style>
-
-</style>
 <body>
+    <aside style="transform: translateX(-100%);">
+        <div class="example">
+        </div>
+
+    </aside>
+     <div id="expandButtonJS" class="expandButton">
+        <div class="stick stick1">
+        </div>
+        <div class="stick stick2">
+        </div>
+        <div class="stick stick3">
+        </div>
+    </div>
+    
+
     <form id="login-form" class="hidden">
     <input required maxlength="15"
      type="text" 
@@ -22,7 +35,7 @@
      <input type="submit" class="loginPosition" value="Log In"/>
 
     </form>
-    
+
     <div id="quote" class="quoteStyle">
         <span class="QuoteFont"></span>
         <p></p>
@@ -30,15 +43,18 @@
     </div>
     <div>
     <span>
-    <h1 id="greeting" class="hidden greetingPosition"></h1>
+    <h1 id="greeting" class="hidden greetingPosition greetingFont"></h1>
     </div>
-    <h2>To Do List</h2>
+    <div class="todoPosition">
+    <h2 style="text-align: center;">To Do List</h2>
     <form id="todo-form">
         <input type="text" 
-        placeholder="Write a To Do and Press Enter" required>
+        placeholder="Write a To Do and Press Enter" required
+        class="todoForm">
     </form>
     
     <ul id="todo-list"></ul>
+</div>
     
     <div id="weather">
         <span></span>
@@ -51,7 +67,7 @@
 
     <script src="js/greeting.js"> </script> 
     <script src="js/clock.js"></script> 
-    <script src="js/quotes.js"></script>
+    <!-- <script src="js/quotes.js"></script> -->
     <script src="js/todo.js"></script>
     <!-- <script src="js/weather.js"></script> -->
 </body>

@@ -1,0 +1,21 @@
+.expandButton .stick{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    pointer-events: none;
+    border-radius: 5px;
+}
+.stick2{
+    position: relative;
+    top: 4px;
+}
+.stick3{
+    position: relative;
+    top: 8px;
+}
+.example{
+    padding:1rem;
+    width: 100%;
+    display: grid;
+    
+}

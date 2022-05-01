@@ -48,3 +48,8 @@ body{
     left: 45.5%;
 
 }
+.todoPosition{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}

@@ -18,15 +18,17 @@ function onLoginSubmit(tomato){
 
 function paintGreetings(username){
     greeting.classList.remove(HIDDEN_CLASSNAME);
-    setInterval(typing,200);
+    setInterval(typing,300);
 }
+
 
 function typing(){
     let txt = content[i++];
     greeting.innerHTML += txt;
-    if (i > content.length) {
-        greeting.textContent="";
-        i = 0;
+    if (i>content.length){
+        greeting.textContent=""
+        i=0;
+        
     }
 }
 
