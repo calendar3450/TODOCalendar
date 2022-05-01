@@ -14,8 +14,7 @@
     top: 8px;
 }
 .example{
-    padding:1rem;
-    width: 100%;
-    display: grid;
-    
+    border:1px solid;
+    padding: 10px;
+
 }
