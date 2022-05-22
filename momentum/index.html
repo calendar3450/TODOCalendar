@@ -11,12 +11,7 @@
     <title>Momentum</title>
 </head>
 <body>
-    <aside id="sideBar" style="transform: translateX(-100%);">
-        <div class="example">
-            안녕
-        </div>
-
-    </aside>
+    
      <div id="expandButtonJS" class="expandButton">
         <div class="stick stick1">
         </div>
@@ -25,8 +20,10 @@
         <div class="stick stick3">
         </div>
     </div>
-    
 
+    <aside id="sideBar" style="transform: translateX(-100%);">
+    </aside>
+    
     <form id="login-form" class="hidden">
     <input required maxlength="15"
      type="text" 
@@ -36,12 +33,6 @@
      <input type="submit" class="loginPosition" value="Log In"/>
 
     </form>
-
-    <div id="quote" class="quoteStyle">
-        <span class="QuoteFont"></span>
-        <p></p>
-        <span class="lastspan QuoteFont"></span>
-    </div>
     <div>
     <span>
     <h1 id="greeting" class="hidden greetingPosition greetingFont"></h1>
@@ -55,6 +46,9 @@
     </form>
     
     <ul id="todo-list"></ul>
+    <div>
+        <progress id="todosProgress" value="10" min="0" max="100"></progress>
+    </div>
 </div>
     
     <div id="weather">
@@ -69,7 +63,6 @@
     <script src="js/expand.js"> </script> 
     <script src="js/greeting.js"> </script> 
     <script src="js/clock.js"></script> 
-    <!-- <script src="js/quotes.js"></script> -->
     <script src="js/todo.js"></script>
     <!-- <script src="js/weather.js"></script> -->
 </body>

@@ -25,10 +25,9 @@ function paintGreetings(username){
 function typing(){
     let txt = content[i++];
     greeting.innerHTML += txt;
-    if (i>content.length){
-        greeting.textContent=""
+    if (i> content.length){
+        greeting.textContent="";
         i=0;
-        
     }
 }
 
@@ -38,7 +37,7 @@ loginForm.addEventListener("submit", onLoginSubmit)
 const savedUsername=localStorage.getItem(USERNAME_KEY);
 const content = `Hello ${savedUsername}`;
 
-if(savedUsername === null){
+if(savedUsername == null){
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit",onLoginSubmit);
 }

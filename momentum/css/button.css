@@ -13,8 +13,8 @@
     position: relative;
     top: 8px;
 }
-.example{
-    border:1px solid;
-    padding: 10px;
 
+.todoButton{
+    background-color: transparent;
+    border: 0;
 }
