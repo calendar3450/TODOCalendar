@@ -2,12 +2,10 @@ const toDoForm =document.querySelector("#todo-form");
 const toDOInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector("#todo-list");
 const TODOS_KEY="toDos";
-const toDosProgress = document.querySelector("#todosProgress");
 
 let toDosProgressMax=0
 let toDosProgressValue = 0;
 let toDos=[];
-let progress
 
 function saveToDos(){
     localStorage.setItem(TODOS_KEY,JSON.stringify(toDos));
@@ -18,14 +16,12 @@ function deleteToDo(event){
     toDos = toDos.filter((toDo) => toDo.id !==parseInt(li.id));
     li.remove()
     saveToDos()
-    toDosProgressMax = toDosProgressMax -1;
     
 }
 
 function confirmTodo(event){
     const li =event.target.parentElement;
     document.querySelector("li").style.textDecoration = "line-through";
-    toDosProgress.value= toDosProgressValue+1;
 
 }
 
@@ -62,10 +58,6 @@ function handleToDoSubmit(event){
         text: newTodo,
         id:Date.now(),
     };
-
-    toDosProgress.value=toDosProgressValue;
-    toDosProgressMax = toDosProgressMax+1;
-    toDosProgress.max= toDosProgressMax;
     
 
     toDos.push(newTodoObj);//리스트에 넣기.

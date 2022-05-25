@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/formDesign.css">
     <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/calendat.css">
     <title>Momentum</title>
 </head>
-<body>
-    
-     <div id="expandButtonJS" class="expandButton">
+
+<main>
+    <div id="expandButtonJS" class="expandButton">
         <div class="stick stick1">
         </div>
         <div class="stick stick2">
@@ -20,25 +21,46 @@
         <div class="stick stick3">
         </div>
     </div>
-
-    <aside id="sideBar" style="transform: translateX(-100%);">
-    </aside>
-    
     <form id="login-form" class="hidden">
-    <input required maxlength="15"
-     type="text" 
-     placeholder="What is your name?"
-     class="namePosition"
-     />
-     <input type="submit" class="loginPosition" value="Log In"/>
-
-    </form>
+        <input required maxlength="15"
+         type="text" 
+         placeholder="What is your name?"
+         class="namePosition"
+         />
+         <input type="submit" class="loginPosition" value="Log In"/>
+    
+        </form>
+    <h2 style="text-align: center;">To Do List</h2>
+    <div class="calendar">
+        <div class="header">
+          <div class="year-month"></div>
+          <div class="nav">
+            <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
+            <button class="nav-btn go-today" onclick="goToday()">Today</button>
+            <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+          </div>
+        </div>
+        <div class="main">
+          <div class="days">
+            <div class="day">일</div>
+            <div class="day">월</div>
+            <div class="day">화</div>
+            <div class="day">수</div>
+            <div class="day">목</div>
+            <div class="day">금</div>
+            <div class="day">토</div>
+          </div>
+          <div class="dates"></div>
+        </div>
+      </div>
+    </main>
+<body>
     <div>
     <span>
     <h1 id="greeting" class="hidden greetingPosition greetingFont"></h1>
     </div>
     <div class="todoPosition">
-    <h2 style="text-align: center;">To Do List</h2>
+    
     <form id="todo-form">
         <input type="text" 
         placeholder="Write a To Do and Press Enter" required
@@ -46,9 +68,7 @@
     </form>
     
     <ul id="todo-list"></ul>
-    <div>
-        <progress id="todosProgress" value="10" min="0" max="100"></progress>
-    </div>
+    
 </div>
     
     <div id="weather">
@@ -64,14 +84,7 @@
     <script src="js/greeting.js"> </script> 
     <script src="js/clock.js"></script> 
     <script src="js/todo.js"></script>
+    <script src="js/calendar.js"></script>
     <!-- <script src="js/weather.js"></script> -->
 </body>
 </html>
-
-<!-- 타이핑 커서 깜빡이게 만들기.-->
-<!-- 
-    투두 리스트를 버튼에 넣어서 숨기게 만들기 
-    주식 오픈api사용해서 해외주식 현황 알리기
-    
-
--->
