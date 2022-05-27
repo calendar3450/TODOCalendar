@@ -1,17 +1,33 @@
-.expandButton .stick{
+.expandButton{
+    position: absolute;
+    width: 40px;
+    height: 24px;
+    top: 10px;
+    left: 5px;
+    cursor:pointer
+}
+.stick{
     width: 25px;
     height: 2px;
     background-color: black;
     pointer-events: none;
     border-radius: 5px;
+    
+}
+.stick1{
+    position: absolute;
+    top: 10px;
+    left: 5px;
 }
 .stick2{
-    position: relative;
-    top: 4px;
+    position: absolute;
+    top: 16px;
+    left: 5px;
 }
 .stick3{
-    position: relative;
-    top: 8px;
+    position: absolute;
+    top: 22px;
+    left: 5px;
 }
 
 .todoButton{

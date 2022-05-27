@@ -1,3 +1,4 @@
+
 .hidden{
     display: none;
 }
@@ -28,28 +29,39 @@ body{
 }
 .greetingPosition{
     position: absolute;
-    top:44%;
-    left:45%;
+    top: 10%;
+    left:47%;
     border-right: 2px solid black;
 }
-.namePosition{
+.nameFormPosition{
     position: absolute;
     top:44%;
     left: 45%;
 }
 .loginPosition{
     position: absolute;
-    top: 47%;
-    left:47%;
+    left: 48%;
 }
 .blinkPosition{
     position:absolute;
     top:44%;
-    left: 45.5%;
-
+    left:45.5%;
 }
 .todoPosition{
     position: absolute;
     top: 5%;
     right: 5%;
+}
+.sideBar{
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    transition: all 0.5s ease;
+}
+.sideBarBox{
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+    padding: 1rem;
+    border-radius: 10px;
 }

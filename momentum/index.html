@@ -12,25 +12,21 @@
     <title>Momentum</title>
 </head>
 
-<main>
-    <div id="expandButtonJS" class="expandButton">
-        <div class="stick stick1">
-        </div>
-        <div class="stick stick2">
-        </div>
-        <div class="stick stick3">
-        </div>
+<aside class="sideBar" style="transform: translateX(-100%);">
+    <div class="sideBarBox">
+        안녕?
     </div>
-    <form id="login-form" class="hidden">
-        <input required maxlength="15"
-         type="text" 
-         placeholder="What is your name?"
-         class="namePosition"
-         />
-         <input type="submit" class="loginPosition" value="Log In"/>
-    
-        </form>
-    <h2 style="text-align: center;">To Do List</h2>
+</aside>
+<form id="login-form" class="hidden">
+    <input required maxlength="15"
+     type="text" 
+     placeholder="What is your name?"
+     class="nameFormPosition"
+     />
+     <input type="submit" class="loginPosition" value="Log In"/>
+    </form>
+
+<main>
     <div class="calendar">
         <div class="header">
           <div class="year-month"></div>
@@ -54,27 +50,31 @@
         </div>
       </div>
     </main>
-<body>
     <div>
-    <span>
-    <h1 id="greeting" class="hidden greetingPosition greetingFont"></h1>
+        <span>
+        <h1 id="greeting" class="hidden greetingPosition greetingFont"></h1>
     </div>
-    <div class="todoPosition">
-    
+<body>
+    <div id="expandButtonJS" class="expandButton">
+        <div class="stick stick1">
+        </div>
+        <div class="stick stick2">
+        </div>
+        <div class="stick stick3">
+        </div>
+    </div>
+<div class="todoPosition">
+    <h2 style="text-align: center;">To Do List</h2>
     <form id="todo-form">
         <input type="text" 
         placeholder="Write a To Do and Press Enter" required
         class="todoForm">
     </form>
     
+    
     <ul id="todo-list"></ul>
     
 </div>
-    
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
     
     <div class="clockDiv">
         <h2 id="clock" class="clockFontAndPosition" >00:00</h2>

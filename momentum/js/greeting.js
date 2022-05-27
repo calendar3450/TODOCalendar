@@ -31,7 +31,6 @@ function typing(){
     }
 }
 
-
 loginForm.addEventListener("submit", onLoginSubmit)
 
 const savedUsername=localStorage.getItem(USERNAME_KEY);

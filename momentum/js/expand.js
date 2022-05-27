@@ -1,5 +1,5 @@
 const sideButton = document.querySelector('#expandButtonJS');
-const sideBar = document.querySelector('#sideBar');
+const sideBar = document.querySelector('.sideBar');
 
 
 function init(){
@@ -7,7 +7,7 @@ function init(){
 }
 
 function openSideBar(){
-    sideBar.style.transform= 'translateX(0)';
+    sideBar.style.transform= 'translateX(0%)';
     sideButton.removeEventListener('click',openSideBar);
     sideButton.addEventListener('click',closeSideBar);
 }
