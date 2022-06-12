@@ -1,0 +1,32 @@
+body{
+    background-image: url('img/4.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+    
+}
+.position{
+    position: absolute;
+    top:37%;
+    left:46%;
+}
+
+.hidden{
+    display: none;
+}
+
+.Form{
+    width: 300px;
+    height: 20px;
+    border:0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: beige;
+}
+.button{
+    background-color: transparent;
+    border: 0;
+    position: relative;
+    left:78%;
+    cursor: pointer;
+}

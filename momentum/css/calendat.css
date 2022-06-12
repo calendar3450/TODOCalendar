@@ -86,7 +86,7 @@
   }
   
   .other {
-    opacity: 0.3;
+    display:none;
   }
   
   .today {
@@ -106,4 +106,14 @@
     background-color: #FF0000;
     border-radius: 50%;
     content: '';
+  }
+  .date{
+    cursor: pointer;
+  }
+  
+  .chooseDay{
+    background-color: yellow;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
   }

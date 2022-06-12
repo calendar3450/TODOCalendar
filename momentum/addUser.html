@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/addUser.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div class="position ">
+            아이디
+            <br>
+            <input type="text" placeholder="ID" class="Form">
+            <br>
+            비밀번호
+            <br>
+            <input type="password" placeholder="password" id="password1" class="Form">
+            <br>
+            비밀번호 확인
+            <br>
+            <input type="password" placeholder="password" onchange="comparePassword()" id="password2" class="Form">
+            <a class="compare hidden">비밀번호가 일치하지 않습니다.</a>
+            <br>
+            <input type="submit" value ="가입하기" class="button">
+        </div>
+    </form>
+</body>
+<script>
+    const message = document.querySelector('.compare');
+    function comparePassword() {
+        if (document.getElementById('password1').value != document.getElementById('password2').value) {
+            message.classList.remove('hidden');
+        }
+        else {
+            message.classList.add('hidden');
+        }
+    }
+
+</script>
+</html>

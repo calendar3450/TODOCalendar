@@ -31,7 +31,6 @@ function paintToDo(newTodo){//todo리스트에 추가 시키기
     const span = document.createElement("span");
     span.innerText = newTodo.text;
 
-
     const confirmButton = document.createElement("button");
     confirmButton.classList.add('todoButton');
     confirmButton.innerText = "✔";
@@ -42,7 +41,6 @@ function paintToDo(newTodo){//todo리스트에 추가 시키기
     deleteButton.classList.add('todoButton');
     deleteButton.innerText = "❌";
     deleteButton.addEventListener("click", deleteToDo);
-
 
     listTodo.appendChild(span);
     listTodo.appendChild(confirmButton);

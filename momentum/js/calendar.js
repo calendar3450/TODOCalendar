@@ -1,4 +1,6 @@
+
 let date = new Date();
+let current_day=date.getDate();
 
 const renderCalender = () => {
   const viewYear = date.getFullYear();
@@ -37,9 +39,9 @@ const renderCalender = () => {
     const condition = i >= firstDateIndex && i < lastDateIndex + 1
                       ? 'this'
                       : 'other';
-    dates[i] = `<div class="date"><span class=${condition}>${date}</span></div>`;
+    dates[i] = `<div id="clickDate" class="date " onclick='clickDate(event)'><span class="${condition} D${condition}${date}">${date}</span></div>`;
   });
-
+  
   document.querySelector('.dates').innerHTML = dates.join('');
 
   const today = new Date();
@@ -54,6 +56,19 @@ const renderCalender = () => {
 };
 
 renderCalender();
+const selectDay = (day) =>{
+  const today=document.querySelector(`.Dthis${day}`);
+  today.classList.toggle('chooseDay');
+};
+
+const clickDate= (e)=>{
+  renderCalender();
+  console.log(e.target.innerText);
+  console.log(e.currentTarget.innerText);
+  const currentDay=e.currentTarget.innerText;
+  selectDay(currentDay)
+};
+
 
 const prevMonth = () => {
   date.setMonth(date.getMonth() - 1);
@@ -69,3 +84,5 @@ const goToday = () => {
   date = new Date();
   renderCalender();
 };
+ 
+

@@ -14,7 +14,12 @@
 
 <aside class="sideBar" style="transform: translateX(-100%);">
     <div class="sideBarBox">
-        안녕?
+        <button class="addURL">➕</button>
+    </div>
+    <br>
+    <div calss="sideBarBox">
+
+        
     </div>
 </aside>
 <form id="login-form" class="hidden">
@@ -25,6 +30,13 @@
      />
      <input type="submit" class="loginPosition" value="Log In"/>
     </form>
+
+<form id="nothing" onsubmit="return false;" class="URLAdder hidden" align="center">
+    <input type="text" placeholder="Enter your site name" required class="URLForm URLForm URLNameAdder">
+    <input type="text" placeholder="Enter your site URL" required class ="URLForm URLForm URLAddressAdder">
+    <input type="submit" class="URLSubmitButton" value="추가" >
+
+</form>
 
 <main>
     <div class="calendar">

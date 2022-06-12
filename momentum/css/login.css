@@ -1,0 +1,35 @@
+body{
+    background-image: url('img/4.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+    
+}
+
+.loginPosition{
+    position: absolute;
+    left: 45%;
+    top:45%;
+}
+
+.Form{
+    width: 200px;
+    height: 20px;
+    border:0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: beige;
+}
+
+.loginButton{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: inherit;
+    left: 80%;
+}
+.userAddURL{
+    position: absolute;
+    top:67%;
+    left:45%;
+}

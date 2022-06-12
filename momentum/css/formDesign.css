@@ -25,3 +25,18 @@
     padding-left: 10px;
     background-color: beige;
 }
+.URLAdder{
+    position:absolute;
+    top:15%;
+    left:12%;
+}
+
+.URLForm{
+    width: 100px;
+    height: 20px;
+    border:0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: beige;
+}
