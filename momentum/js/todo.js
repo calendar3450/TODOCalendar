@@ -1,10 +1,8 @@
 const toDoForm =document.querySelector("#todo-form");
 const toDOInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector("#todo-list");
-const TODOS_KEY="toDos";
 
-let toDosProgressMax=0
-let toDosProgressValue = 0;
+TODOS_KEY='TodoKey';
 let toDos=[];
 
 function saveToDos(){
@@ -29,7 +27,7 @@ function paintToDo(newTodo){//todo리스트에 추가 시키기
     const listTodo = document.createElement("li");
     listTodo.id=newTodo.id;
     const span = document.createElement("span");
-    span.innerText = newTodo.text;
+    span.innerText = (`${TODOS_KEY}${newTodo.text}`);
 
     const confirmButton = document.createElement("button");
     confirmButton.classList.add('todoButton');
@@ -75,6 +73,5 @@ if (savedToDos !== null){
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo); 
     }
-
 
 

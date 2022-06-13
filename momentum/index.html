@@ -17,9 +17,13 @@
         <button class="addURL">➕</button>
     </div>
     <br>
-    <div calss="sideBarBox">
-
-        
+    <div class="sideBarBox sideBarBox2">
+        <a>메모장</a>
+        <button class="addSomething">➕</button>
+        <br>
+        <form class="memoForm" onsubmit="return false;">
+            <input type="text" placeholder="추가할 것" class="hidden inputSomething">
+        </form>
     </div>
 </aside>
 <form id="login-form" class="hidden">
@@ -76,26 +80,21 @@
         </div>
     </div>
 <div class="todoPosition">
-    <h2 style="text-align: center;">To Do List</h2>
+    <h2 style="text-align: center;">일 정</h2>
     <form id="todo-form">
         <input type="text" 
         placeholder="Write a To Do and Press Enter" required
         class="todoForm">
     </form>
     
-    
     <ul id="todo-list"></ul>
     
 </div>
-    
-    <div class="clockDiv">
-        <h2 id="clock" class="clockFontAndPosition" >00:00</h2>
-    </div>
 
     <script src="js/expand.js"> </script> 
     <script src="js/greeting.js"> </script> 
-    <script src="js/clock.js"></script> 
-    <script src="js/todo.js"></script>
+    <!-- <script src="js/clock.js"></script>  -->
+    <!-- <script src="js/todo.js"></script> -->
     <script src="js/calendar.js"></script>
     <!-- <script src="js/weather.js"></script> -->
 </body>

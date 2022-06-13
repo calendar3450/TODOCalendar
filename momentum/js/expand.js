@@ -2,6 +2,10 @@ const sideButton = document.querySelector('#expandButtonJS');
 const sideBar = document.querySelector('.sideBar');
 const addURL = document.querySelector('.addURL');
 const sideBarBox = document.querySelector('.sideBarBox');
+const sideBarBox2 = document.querySelector('.sideBarBox2');
+const addSomething = document.querySelector('.addSomething');
+const inputSomething = document.querySelector('.inputSomething');
+const memoForm = document.querySelector('.memoForm');
 
 const URLAdder = document.querySelector('.URLAdder');
 const URLNameAdder = URLAdder.querySelector('.URLNameAdder');
@@ -11,6 +15,8 @@ function init(){
     sideButton.addEventListener('click',openSideBar);
     addURL.addEventListener('click',addURLSite);
     URLAdder.addEventListener('submit',makeURLli);
+    addSomething.addEventListener('click',inputSomethinginMemo);
+    memoForm.addEventListener('submit',addSomethinginMemo);
 }
 
 function openSideBar(){
@@ -49,4 +55,27 @@ function hideURL(){
     URLAdder.classList.add('hidden');
     addURL.addEventListener('click',addURLSite);
 }
+
+function inputSomethinginMemo () {
+    inputSomething.classList.remove('hidden');
+    addSomething.removeEventListener('click',inputSomethinginMemo);
+    addSomething.addEventListener('click',hideMemo);
+}
+
+function hideMemo(){
+    inputSomething.classList.add('hidden');
+    addSomething.removeEventListener('click',hideMemo);
+    addSomething.addEventListener('click',inputSomethinginMemo)
+}
+
+function addSomethinginMemo() {
+    const memoList=document.createElement('li');
+    const memoContents= document.createElement('a');
+    const memo=inputSomething.value;
+    memoContents.innerText=memo;
+    sideBarBox2.appendChild(memoList);
+    memoList.appendChild(memoContents);
+    hideMemo();
+}
+
 init();

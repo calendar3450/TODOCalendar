@@ -43,3 +43,9 @@
     background-color: transparent;
     border: 0;
 }
+
+.addSomething{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
