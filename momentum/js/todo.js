@@ -14,13 +14,6 @@ function deleteToDo(event){
     toDos = toDos.filter((toDo) => toDo.id !==parseInt(li.id));
     li.remove()
     saveToDos()
-    
-}
-
-function confirmTodo(event){
-    const li =event.target.parentElement;
-    document.querySelector("li").style.textDecoration = "line-through";
-
 }
 
 function paintToDo(newTodo){//todo리스트에 추가 시키기
@@ -28,12 +21,6 @@ function paintToDo(newTodo){//todo리스트에 추가 시키기
     listTodo.id=newTodo.id;
     const span = document.createElement("span");
     span.innerText = (`${TODOS_KEY}${newTodo.text}`);
-
-    const confirmButton = document.createElement("button");
-    confirmButton.classList.add('todoButton');
-    confirmButton.innerText = "✔";
-    confirmButton.addEventListener("click", confirmTodo);
-    confirmButton.id="confirm";
 
     const deleteButton = document.createElement("button");
     deleteButton.classList.add('todoButton');
